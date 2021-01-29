@@ -26,4 +26,8 @@ h2.event-title {
   .event {
     width: 50%;
   }
+  .event:hover {
+    position: relative;
+    top: 2px;
+  }
 }
