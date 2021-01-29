@@ -10,10 +10,10 @@ const validations = {
   },
 
   timeShouldBeInTheFuture: function (time) {
-    if(Date.parse(time) > Date.now()) {
+    if(Date.parse(time) > Date.now() || Date.parse(time) === Date.now() ) {
       return [true, ""]
     } else {
-      return [false, "can\'t be in the past"]
+      return [true, "can\'t be in the past"]
     }
   }
 }

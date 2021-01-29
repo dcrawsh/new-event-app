@@ -60,6 +60,15 @@ class Eventlite extends React.Component {
       this.addNewEvent(response.data)
       this.resetFormErrors();
     })
+    .then(() => this.setState({
+      events: this.props.events,
+      title: {value: '', valid: false},
+      start_datetime: {value: '', valid: false},
+      location: {value: '', valid: false},
+      formErrors: {},
+      formValid: false
+    }))
+    .then(() => location.reload())
     .catch(error => {
       console.log(error.response.data)
       this.setState({formErrors: error.response.data})
