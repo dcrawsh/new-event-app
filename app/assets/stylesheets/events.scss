@@ -1,6 +1,11 @@
 .event {
   padding: 20px 0;
-  border-bottom: solid 1px #EAEAEA;
+  border: solid 1px #EAEAEA;
+  width: 90%;
+  text-align: center;
+  margin: 1rem auto;
+  border-radius: 3px;
+  background-color: white;
 }
 
 h2.event-title {
@@ -8,11 +13,17 @@ h2.event-title {
 }
 
 .event-location {
-  color: #999999;
+  color:darkgray;
   margin: 5px 0;
 }
 
 .event-datetime {
   color: #FD7E14;
   margin: 5px 0;
+}
+
+@media(min-width: 40rem) {
+  .event {
+    width: 50%;
+  }
 }

@@ -115,7 +115,7 @@ class Eventlite extends React.Component {
   render() {
     return (
       <div>
-        <h1 className="logo" ref={this.logo}>Eventlite</h1>
+        <h1 className="logo" ref={this.logo}>Portland Eventer</h1>
         <FormErrors formErrors = {this.state.formErrors} />
         <EventForm handleSubmit = {this.handleSubmit}
           handleInput = {this.handleInput}
